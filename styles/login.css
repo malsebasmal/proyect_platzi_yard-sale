@@ -1,0 +1,114 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0%; 
+}
+
+:root {
+    --color-primary: #acd9b2;
+    --color-secondary: #ffffff;
+    --color-tertiary: #c7c7c7;
+    --color-text-input: #f7f7f7;
+    --color-black: #000000;
+    --color-dark: #232830;
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.8rem;
+}
+
+.div {
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div__div {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 100%;
+}
+
+.div__img {
+    width: 15rem;
+    margin-bottom: 5rem;
+    display: none;
+}
+
+.div__form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+.form__label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.form__input {
+    background-color: var(--color-tertiary);
+    border: none;
+    border-radius: 0.8rem;
+    height: 3rem;
+    padding: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.form__input--login {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+.form__span {
+    text-align: center;
+}
+
+.span__a {
+    font-size: var(--sm);
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.form__input--singup {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 0.1rem solid;
+    border-radius: 0.8rem;
+    border-color: var(--color-primary);
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 40rem) {
+    .div__img {
+            display: block  ;
+    }
+
+    .form__input--singup {
+        width: inherit;
+        position: absolute;
+        bottom: 0;  
+        margin-bottom: 2.4rem;
+    }
+}

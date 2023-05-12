@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0%;
+}
+
+:root {
+    --color-primary: #acd9b2;
+    --color-secondary: #ffffff;
+    --color-tertiary: #c7c7c7;
+    --color-text-input: #f7f7f7;
+    --color-black: #000000;
+    --color-dark: #232830;
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.8rem;
+}
+
+.div {
+    width: 10rem;
+    height: auto;
+    border: 0.1rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    padding: 2rem 2rem 0rem 2rem;
+}
+.div__ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: end;
+    
+}
+.ul__li {
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.ul__li--out {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    border-top: 0.1rem solid var(--color-tertiary);
+}
+
+.li__a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: var(--sm);
+}
+
+.li__a--out {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: var(--sm);
+}

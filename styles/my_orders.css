@@ -1,0 +1,104 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+:root {
+    --color-primary: #acd9b2;
+    --color-secondary: #ffffff;
+    --color-tertiary: #c7c7c7;
+    --color-text-input: #f7f7f7;
+    --color-black: #000000;
+    --color-dark: #232830;
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.8rem;
+}
+
+.div {
+    width: 100vw ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__div {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.div__div--one {
+    margin-bottom: 4rem;
+}
+
+.div__h1 {
+    margin: 0;
+    font-size: var(--lg);
+}
+
+/* xd */
+
+.div__div--two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    background-color: var(--color-text-input);
+    border-radius: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.div__p--two {
+    margin-left: 0.5rem;
+}
+
+.div__p--two--flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.div__p--p--bold {
+    margin: 0;
+    font-size: var(--md);
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.div__p--p {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: var(--color-tertiary);
+}
+
+.div__p--p--bold--price {
+    margin: 0;
+    margin-right: 3rem;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.div__img {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 40rem) {
+
+    .div__div {
+        width: 30rem;
+    }
+
+    .div__div--one {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+}

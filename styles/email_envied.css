@@ -1,0 +1,100 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0%; 
+}
+
+:root {
+    --color-primary: #acd9b2;
+    --color-secondary: #ffffff;
+    --color-tertiary: #c7c7c7;
+    --color-text-input: #f7f7f7;
+    --color-black: #000000;
+    --color-dark: #232830;
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.8rem;
+}
+
+.div {
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.div__div {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 100%;
+}
+
+.div__img--logo {
+    width: 15rem;
+    margin-bottom: 5rem;
+    display: none;
+}
+
+.div__h1 {
+    font-size: var(--lg);
+    margin-bottom: 1.2rem;
+}
+
+.div__p {
+    font-size: var(--md);
+    font-weight: 300;
+    color: var(--color-tertiary);
+    margin-top: 0;
+    margin-bottom: 3.2rem;
+}
+
+.div__img--email {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background-color: var(--color-text-input);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.2rem;
+
+}
+.div__img {
+    width: 8rem;
+}
+
+.div__input--confirm {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 3.2rem;
+}
+
+.div__span {
+    font-size: var(--sm);
+    color: var(--color-tertiary);
+}
+
+.span__a {
+    color: var(--color-primary);
+    }
+
+@media (max-width: 40rem) {
+    .div__img--logo {
+        display: block  ;
+    }
+}

@@ -1,0 +1,88 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0%; 
+}
+
+:root {
+    --color-primary: #acd9b2;
+    --color-secondary: #ffffff;
+    --color-tertiary: #c7c7c7;
+    --color-text-input: #f7f7f7;
+    --color-black: #000000;
+    --color-dark: #232830;
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.8rem;
+}
+
+.div {
+    width: 100vw;  
+    height: 100vh;
+}
+
+.div__div {
+    margin: 0rem;
+    padding: 3rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.div__ul {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0.1rem solid var(--color-tertiary);
+}
+
+.div__ul--one {
+    margin: 0;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.div__ul--two {
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3rem;
+}
+
+.ul__li {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.ul__li--gmail {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.ul__li--out {
+    list-style: none;
+}
+
+.li__a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+.li__a--gmail {
+    text-decoration: none;
+    color: var(--color-tertiary);
+    font-weight: lighter;
+    font-size: var(--sm);
+}
+
+.li__a--out {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: var(--sm);
+}

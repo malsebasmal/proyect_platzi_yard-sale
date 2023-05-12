@@ -1,0 +1,117 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0%;
+}
+
+:root {
+    --color-primary: #acd9b2;
+    --color-secondary: #ffffff;
+    --color-tertiary: #c7c7c7;
+    --color-text-input: #f7f7f7;
+    --color-black: #000000;
+    --color-dark: #232830;
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.8rem;
+}
+
+.header { 
+    background-color: aqua; 
+    width: 100%;
+    height: 10vh;
+}
+
+.section {
+    width: 100% ;
+    height: 100vh;
+    margin-top: 3rem;
+}
+
+.section__div {
+    --card-image-size: 26rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card-image-size));
+    grid-gap: 4rem;
+    place-content: center;
+}
+
+.section__div--div {
+    width: var(--card-image-size);
+}
+
+.div__img {
+    width: var(--card-image-size);
+    height: var(--card-image-size);
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.6rem;
+}
+
+.div__p {
+    font-size: var(--lg);
+}
+
+.div__p--p--bold {
+    font-weight: bold;
+    font-size: var(--lg);
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+}
+
+.div__p--p {
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--color-tertiary);
+}
+
+.div__figure {
+    margin: 0;
+}
+
+.div__figure--img {
+    width: 5rem;
+}
+
+@media (max-width: 40rem){
+    .section__div {
+        --card-image-size: 16rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, var(--card-image-size));
+        grid-gap: 2rem;
+        place-content: center;
+    }
+
+    .section__div--div {
+        width: var(--card-image-size);
+    }
+    
+    .div__img {
+        width: var(--card-image-size);
+        height: var(--card-image-size);
+        object-fit: cover;
+        border-radius: 2rem;
+    }
+
+    .div {
+        margin-top: 1rem;
+    }
+
+    .div__p--p--bold {
+        margin-bottom: 0.8rem;
+    }
+
+    .div__figure--img {
+        width: 6rem;
+    }
+}
